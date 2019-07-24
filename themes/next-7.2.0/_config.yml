@@ -35,9 +35,9 @@ cache:
 # ---------------------------------------------------------------
 
 favicon:
-  small: /images/favicon-16x16-next.png
-  medium: /images/favicon-32x32-next.png
-  apple_touch_icon: /images/apple-touch-icon-next.png
+  small: /images/favicon-16x16-mine.png
+  medium: /images/favicon-32x32-mine.png
+  apple_touch_icon: /images/apple-touch-icon-mine.png
   safari_pinned_tab: /images/logo.svg
   #android_manifest: /images/manifest.json
   #ms_browserconfig: /images/browserconfig.xml
@@ -55,18 +55,18 @@ footer:
   icon:
     # Icon name in fontawesome, see: https://fontawesome.com/v4.7.0/icons/
     # `heart` is recommended with animation in red (#ff0000).
-    name: user
+    name: heart
     # If you want to animate the icon, set it to true.
-    animated: false
+    animated: true
     # Change the color of icon, using Hex Code.
-    color: "#808080"
+    color: "#ff0000"
 
   # If not defined, `author` from Hexo main config will be used.
   copyright:
 
   powered:
     # Hexo link (Powered by Hexo).
-    enable: true
+    enable: false
     # Version info of Hexo after Hexo link (vX.X.X).
     version: false
 
@@ -100,7 +100,7 @@ creative_commons:
 # `Follow me on GitHub` banner in the top-right corner.
 github_banner:
   enable: false
-  permalink: https://github.com/yourname
+  permalink: https://github.com/quyao
   title: Follow me on GitHub
 
 
@@ -117,7 +117,7 @@ disable_baidu_transformation: false
 canonical: true
 
 # Change headers hierarchy on site-subtitle (will be main site description) and on all post / page titles for better SEO-optimization.
-seo: false
+seo: true
 
 # If true, will add site-subtitle to index page, added in main hexo config.
 # subtitle: Subtitle
@@ -197,8 +197,8 @@ site_state: true
 # Value before `||` delimiter is the target permalink.
 # Value after `||` delimiter is the name of FontAwesome icon. If icon (with or without delimiter) is not specified, globe icon will be loaded.
 social:
-  #GitHub: https://github.com/yourname || github
-  #E-Mail: mailto:yourname@gmail.com || envelope
+  GitHub: https://github.com/quyao || github
+  E-Mail: mailto:quyaov@gmail.com || envelope
   #Weibo: https://weibo.com/yourname || weibo
   #Google: https://plus.google.com/yourname || google
   #Twitter: https://twitter.com/yourname || twitter
@@ -211,7 +211,7 @@ social:
 
 social_icons:
   enable: true
-  icons_only: false
+  icons_only: true
   transition: false
 
 # Blog rolls
@@ -227,9 +227,9 @@ avatar:
   # In theme directory (source/images): /images/avatar.gif
   # In site directory (source/uploads): /uploads/avatar.gif
   # You can also use other linking images.
-  url: #/images/avatar.gif
+  url: /images/avatar-mine.gif
   # If true, the avatar would be dispalyed in circle.
-  rounded: false
+  rounded: true
   # The value of opacity should be choose from 0 to 1 to set the opacity of the avatar.
   opacity: 1
   # If true, the avatar would be rotated with the cursor.
@@ -705,18 +705,18 @@ likely:
 # Weibo,Wechat,Douban,QQZone,Twitter,Facebook,Linkedin,Mailto,Reddit,Delicious,StumbleUpon,Pinterest,
 # GooglePlus,Tumblr,GoogleBookmarks,Newsvine,Evernote,Friendfeed,Vkontakte,Odnoklassniki,Mailru
 needmoreshare2:
-  enable: false
+  enable: true
   postbottom:
-    enable: false
+    enable: true
     options:
-      iconStyle: box
+      iconStyle: default
       boxForm: horizontal
       position: bottomCenter
       networks: Weibo,Wechat,Douban,QQZone,Twitter,Facebook
   float:
     enable: false
     options:
-      iconStyle: box
+      iconStyle: default
       boxForm: horizontal
       position: middleRight
       networks: Weibo,Wechat,Douban,QQZone,Twitter,Facebook
@@ -728,7 +728,7 @@ needmoreshare2:
 # ---------------------------------------------------------------
 
 # Baidu Analytics ID
-#baidu_analytics:
+baidu_analytics: 28bad2efbcd0f65698642b30ec8492a6
 
 # Growingio Analytics ID
 # Copyright 2015-2018 GrowingIO, Inc. More info available at https://www.growingio.com
@@ -1022,7 +1022,7 @@ vendors:
   # Example:
   # jquery: //cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js
   # jquery: //cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js
-  jquery:
+  jquery: //cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js
 
   # Internal version: 2.1.5 & 3.5.7
   # See: https://fancyapps.com/fancybox
@@ -1055,8 +1055,8 @@ vendors:
   # velocity: //cdnjs.cloudflare.com/ajax/libs/velocity/1.2.1/velocity.min.js
   # velocity_ui: //cdn.jsdelivr.net/npm/velocity-animate@1/velocity.ui.min.js
   # velocity_ui: //cdnjs.cloudflare.com/ajax/libs/velocity/1.2.1/velocity.ui.min.js
-  velocity:
-  velocity_ui:
+  velocity: //cdn.jsdelivr.net/npm/velocity-animate@1/velocity.min.js
+  velocity_ui: //cdn.jsdelivr.net/npm/velocity-animate@1/velocity.ui.min.js
 
   # Internal version: 4.7.0
   # See: https://fontawesome.com
@@ -1127,8 +1127,8 @@ vendors:
   # Example:
   # needmoreshare2_js: //cdn.jsdelivr.net/gh/theme-next/theme-next-needmoreshare2@1/needsharebutton.min.js
   # needmoreshare2_css: //cdn.jsdelivr.net/gh/theme-next/theme-next-needmoreshare2@1/needsharebutton.min.css
-  needmoreshare2_js:
-  needmoreshare2_css:
+  needmoreshare2_js: //cdn.jsdelivr.net/gh/theme-next/theme-next-needmoreshare2@1/needsharebutton.min.js
+  needmoreshare2_css: //cdn.jsdelivr.net/gh/theme-next/theme-next-needmoreshare2@1/needsharebutton.min.css
 
   # Internal version: 1.0.0
   # See: https://github.com/theme-next/theme-next-bookmark
@@ -1155,9 +1155,9 @@ vendors:
   # gitalk_js: //cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js
   # gitalk_css: //cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css
   # md5: //cdn.jsdelivr.net/npm/js-md5@0/src/md5.min.js
-  gitalk_js:
-  gitalk_css:
-  md5:
+  gitalk_js: //cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js
+  gitalk_css: //cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css
+  md5: //cdn.jsdelivr.net/npm/js-md5@0/src/md5.min.js
 
   # likely
   # See: https://github.com/ilyabirman/Likely
